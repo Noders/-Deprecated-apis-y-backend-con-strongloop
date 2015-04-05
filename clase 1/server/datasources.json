@@ -1,0 +1,20 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "bigspenderdev": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "bigspender_dev",
+    "name": "bigspenderdev",
+    "connector": "mongodb"
+  },
+  "ffores_MYSQL": {
+    "host": "ensembldb.ensembl.org",
+    "port": 3306,
+    "name": "ffores_MYSQL",
+    "connector": "mysql",
+    "user": "anonymous"
+  }
+}
