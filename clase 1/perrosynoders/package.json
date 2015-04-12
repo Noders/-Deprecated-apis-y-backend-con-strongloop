@@ -1,5 +1,5 @@
 {
-  "name": "day1",
+  "name": "perrosynoders",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -7,13 +7,11 @@
   },
   "dependencies": {
     "compression": "^1.0.3",
+    "cors": "^2.5.2",
     "errorhandler": "^1.1.1",
-    "loopback": "^2.8.0",
+    "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",
-    "loopback-connector-mongodb": "^1.8.0",
-    "loopback-connector-mysql": "^1.6.0",
-    "loopback-connector-soap": "^1.2.0",
-    "loopback-datasource-juggler": "^2.7.0",
+    "loopback-datasource-juggler": "^2.19.0",
     "serve-favicon": "^2.0.1"
   },
   "optionalDependencies": {
@@ -26,5 +24,5 @@
     "type": "",
     "url": ""
   },
-  "description": "day1"
+  "description": "perrosynoders"
 }

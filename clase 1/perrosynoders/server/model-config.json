@@ -26,7 +26,11 @@
     "dataSource": "db",
     "public": false
   },
-  "Test": {
+  "perro": {
+    "dataSource": "db",
+    "public": true
+  },
+  "noder": {
     "dataSource": "db",
     "public": true
   }
