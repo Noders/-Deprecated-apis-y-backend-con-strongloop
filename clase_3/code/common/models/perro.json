@@ -1,0 +1,19 @@
+{
+  "name": "perro",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "edad": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
