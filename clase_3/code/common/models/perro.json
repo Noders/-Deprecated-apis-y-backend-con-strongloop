@@ -11,9 +11,9 @@
       "type": "number",
       "required": true
     },
-    "edad_en_perro":{
-      "type":"number",
-      "required":false
+    "edad_en_perro": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

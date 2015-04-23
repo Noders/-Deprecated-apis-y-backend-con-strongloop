@@ -1,21 +1,5 @@
-Perro.validatesUniquenessOf('nombre', {
-    message: 'El Nombre del perro ya está en uso'
-});
 
 
-
-// un observer, o un hook
-Perro.observe('before save', function(ctx, next) {
-    //SI CREO
-    if (ctx.instance) {
-        ctx.instance.edad_en_perro = ctx.instance.edad * 7;
-        //SI UPDATEO
-    } else {
-
-    }
-    //CONTINUO
-    next();
-}); 
 
 
 // un 'remote method'

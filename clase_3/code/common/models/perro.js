@@ -1,13 +1,18 @@
 module.exports = function(Perro) {
+
+    var app = require('../../server/server');
+    var Noders = app.models.Noders;
+
+
     Perro.validatesUniquenessOf('nombre', {
         message: 'El Nombre del perro ya está en uso'
     });
 
 
-
     // un observer, o un hook
     Perro.observe('before save', function(ctx, next) {
-        //SI CREO
+        console.log("hola")
+            //SI CREO
         if (ctx.instance) {
             ctx.instance.edad_en_perro = ctx.instance.edad * 7;
             //SI UPDATEO
@@ -19,8 +24,14 @@ module.exports = function(Perro) {
     }); 
 
 
+
+
+
+
+
+
     // un 'remote method'
-    Perro.saluden = function(cb) {
+    Perro.saluden = function(msg, cb) {
         cb(null, 'Guau! ' + msg);
     };
 
@@ -34,6 +45,10 @@ module.exports = function(Perro) {
             type: 'string'
         }
     });
+
+
+
+
 
 
 
@@ -54,6 +69,19 @@ module.exports = function(Perro) {
             path: '/ladraTuNombre'
         }
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // un 'remote method' POST
@@ -78,6 +106,11 @@ module.exports = function(Perro) {
             path: '/ladraLoSiguiente'
         }
     });
+
+
+
+
+
 
 
 
@@ -111,11 +144,4 @@ module.exports = function(Perro) {
     });
 
 
-
 };
-
-/*
-
-    5514a0f9ff35f581a6396d34
-
-*/

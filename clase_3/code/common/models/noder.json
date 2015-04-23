@@ -1,40 +1,40 @@
 {
-    "name": "noder",
-    "base": "PersistedModel",
-    "idInjection": true,
-    "properties": {
-        "nombre": {
-            "type": "string",
-            "required": true
-        }
+  "name": "noder",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "mascotas": {
+      "type": "hasMany",
+      "model": "perro",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
     },
-    "validations": [],
-    "relations": {
-        "mascotas": {
-            "type": "hasMany",
-            "model": "perro",
-            "foreignKey": ""
-        }
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
     },
-    "acls": [{
-            "accessType": "*",
-            "principalType": "ROLE",
-            "principalId": "$everyone",
-            "permission": "DENY"
-        }, {
-            "accessType": "WRITE",
-            "principalType": "ROLE",
-            "principalId": "$authenticated",
-            "permission": "ALLOW"
-        },
-        {
-            "accessType": "READ",
-            "principalType": "ROLE",
-            "principalId": "$authenticated",
-            "permission": "ALLOW"
-        }
-
-
-    ],
-    "methods": []
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": []
 }

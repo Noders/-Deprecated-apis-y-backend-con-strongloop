@@ -6,5 +6,11 @@
   "noders_dev": {
     "name": "noders_dev",
     "connector": "mongodb"
+  },
+  "mysql": {
+    "database": "sakila",
+    "name": "mysql",
+    "connector": "mysql",
+    "user": "root"
   }
 }
