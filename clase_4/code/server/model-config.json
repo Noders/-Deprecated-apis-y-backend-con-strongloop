@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "noders_dev",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "noders_dev",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "noders_dev",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "noders_dev",
+    "public": true
+  },
+  "Role": {
+    "dataSource": "noders_dev",
+    "public": true
+  },
+  "perro": {
+    "dataSource": "noders_dev",
+    "public": true
+  },
+  "noder": {
+    "dataSource": "noders_dev",
+    "public": true
+  },
+  "miusuario": {
+    "dataSource": "noders_dev",
+    "public": true
+  },
+  "Actor": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "ActorInfo": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "gmail",
+    "public": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "perro",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "edad": {
+      "type": "number",
+      "required": true
+    },
+    "edad_en_perro": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [{
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "ADMIN",
+      "permission": "ALLOW",
+      "property" : "find"
+    }],
+  "methods": []
+}

@@ -1,0 +1,21 @@
+{
+  "name": "noder",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "mascotas": {
+      "type": "hasMany",
+      "model": "perro",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
