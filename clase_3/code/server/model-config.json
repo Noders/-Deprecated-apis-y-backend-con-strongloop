@@ -38,5 +38,17 @@
   "miusuario": {
     "dataSource": "noders_dev",
     "public": true
+  },
+  "Actor": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "ActorInfo": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
