@@ -1,0 +1,47 @@
+ROLES
+    [{
+        "id": 1,
+        "name": "admin",
+        "created": "2015-04-29T04:56:53.733Z",
+        "modified": "2015-04-29T04:56:53.733Z"
+    }]
+
+RoleMappings
+    [{
+        "id": 1,
+        "principalType": "USER",
+        "principalId": "3", //USER_ID
+        "roleId": 1 //ROLEID
+    }]
+
+
+    //all
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    }
+    
+    //miusuario
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "ADMIN",
+      "permission": "ALLOW"
+    }
+
+    //perros
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "ADMIN",
+      "permission": "ALLOW",
+      "property" : "find"
+    }
+
+
+ROLEID 554066ac433de0402c142308
+
+
+USERID 554048489eae1b3c2486d76a

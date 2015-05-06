@@ -1,0 +1,16 @@
+{
+    "name": "miusuario",
+    "base": "User",
+    "idInjection": true,
+    "properties": {},
+    "validations": [],
+    "relations": {
+        "perros": {
+            "type": "hasMany",
+            "model": "perro",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": []
+}
