@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:3000/#!/campaigns -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" hola_ext_inject="ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+	<title>NoiseGrasp - Development Environment</title>
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- Semantic META -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- Facebook META -->
+	<meta property="fb:app_id" content="APP_ID">
+	<meta property="og:site_name" content="NoiseGrasp - Development Environment">
+	<meta property="og:title" content="NoiseGrasp - Development Environment">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="http://localhost:3000/">
+	<meta property="og:image" content="/img/brand/logo.png">
+	<meta property="og:type" content="website">
+
+	<!-- Twitter META -->
+	<meta name="twitter:title" content="NoiseGrasp - Development Environment">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:url" content="http://localhost:3000/">
+	<meta name="twitter:image" content="/img/brand/logo.png">
+
+    <!-- Open Sans Font-->
+    <link href="./NoiseGrasp - Development Environment_files/css" rel="stylesheet" type="text/css">
+
+	<!-- Fav Icon -->
+    <link href="http://localhost:3000/lib/custom/img/favicon_square2.ico" rel="shortcut icon" type="image/x-icon">
+
+	<!--Application CSS Files-->
+	<link rel="stylesheet" href="http://localhost:3000/lib/bootstrap/dist/css/bootstrap.css"><link rel="stylesheet" href="http://localhost:3000/lib/metisMenu/dist/metisMenu.min.css"><link rel="stylesheet" href="http://localhost:3000/lib/fontawesome/css/font-awesome.min.css"><link rel="stylesheet" href="http://localhost:3000/lib/icheck/skins/square/green.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/bootstrapExtensions/centeredcolumns.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/bootstrapExtensions/sameheightcolumns.css"><link rel="stylesheet" href="http://localhost:3000/lib/nvd3/build/nv.d3.min.css"><link rel="stylesheet" href="http://localhost:3000/lib/animate.css/animate.min.css"><link rel="stylesheet" href="http://localhost:3000/lib/angular-ui-select/dist/select.min.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/areaChart/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/bulletChart/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/horizontalBarChart/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/lineChart/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/linechartEstrategia/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/radialChart/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/roiRadialChart/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/simplerBulletChart/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/stackedHorizontarBarChart/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/stackedHorizontarBarChartEstrategia/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/charts/stackedHorizontarBarChartVentas/chart.css"><link rel="stylesheet" href="http://localhost:3000/lib/switchery/dist/switchery.min.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/noisegrasp/icons/noisegraspfonts.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/noisegrasp/fonts/LatoLatin/LatoLatin-Regular.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/noisegrasp/fonts/LatoLatin/LatoLatinLight-Regular.css"><link rel="stylesheet" href="http://localhost:3000/lib/custom/noisegrasp/app.css"><link rel="stylesheet" href="http://localhost:3000/modules/campaigns/css/campaigns.css"><link rel="stylesheet" href="http://localhost:3000/modules/core/css/core.css"><link rel="stylesheet" href="http://localhost:3000/modules/core/css/style.css"><link rel="stylesheet" href="http://localhost:3000/modules/scenarios/css/scenarios.css"><link rel="stylesheet" href="http://localhost:3000/modules/users/css/users.css">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body class=" pace-done" hola-ext-player="1"><div class="pace  pace-inactive"><div class="pace-progress progress ng-isolate-scope" ng-transclude="" data-progress-text="100%" data-progress="99" style="width: 100%;">
+  <div class="pace-progress-inner ng-scope"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+
+<!-- Wrapper-->
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav data-ng-controller="HeaderController" class="ng-scope">
+
+	    <!-- ngInclude: '/modules/core/views/navigation.client.view.html' --><div data-ng-hide="isNotAdmin" data-ng-include="&#39;/modules/core/views/navigation.client.view.html&#39;" class="ng-scope ng-hide"><nav class="navbar-default navbar-static-side ng-scope" role="navigation" data-ng-controller="HeaderController">
+    <div class="sidebar-collapse">
+        <ul side-navigation="" class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element" data-ng-show="authentication.user">
+                    <!-- Picture of user -->
+                    <!--<img alt="image" class="img-circle" src="img/profile_small.jpg"/>-->
+                    <a class="dropdown-toggle" href="" aria-haspopup="true" aria-expanded="false">
+                        <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold ng-binding"></strong>
+                             </span>
+                        <span class="text-muted text-xs block ng-binding"> test test  <b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li>
+                            <a href="http://localhost:3000/#!/settings/profile">Perfil</a>
+                        </li>
+
+                        <li data-ng-show="authentication.user.provider === &#39;local&#39;" class="">
+                            <a href="http://localhost:3000/#!/settings/password">Cambiar contraseña</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://localhost:3000/auth/signout">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    NG+
+                </div>
+            </li>
+            <li data-ng-show="authentication.user" ng-class="{active: $uiRoute}" ui-route="/" class="ng-scope">
+                <a href="./NoiseGrasp - Development Environment_files/NoiseGrasp - Development Environment.html"><i class="fa fa-line-chart"></i> <span class="nav-label">Campañas</span></a>
+            </li>
+            <!-- ngRepeat: item in menu.items | orderBy: 'position' --><li data-ng-hide="isNotAdmin" data-ng-repeat="item in menu.items | orderBy: &#39;position&#39;" ng-switch="item.menuItemType" ui-route="/admin" ng-class="{active: ($uiRoute)}" class="ng-scope ng-hide">
+                <a href=""><i class="fa fa-laptop"></i> <span class="nav-label ng-binding">Admin </span> <span ng-show="item.items" class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: ($uiRoute)}">
+                    <!-- ngRepeat: subitem in item.items | orderBy: 'position' --><!-- ngIf: subitem.shouldRender(authentication.user); --><li role="presentation" data-ng-repeat="subitem in item.items | orderBy: &#39;position&#39;" data-ng-if="subitem.shouldRender(authentication.user);" ui-route="/segments" ng-class="{active: $uiRoute}" class="ng-scope">
+                        <a role="menuitem" tabindex="-1" href="http://localhost:3000/#!/segments" data-ng-bind="subitem.title" class="ng-binding">Segmentos de clientes</a>
+                    </li><!-- end ngIf: subitem.shouldRender(authentication.user); --><!-- end ngRepeat: subitem in item.items | orderBy: 'position' --><!-- ngIf: subitem.shouldRender(authentication.user); --><li role="presentation" data-ng-repeat="subitem in item.items | orderBy: &#39;position&#39;" data-ng-if="subitem.shouldRender(authentication.user);" ui-route="/products" ng-class="{active: $uiRoute}" class="ng-scope">
+                        <a role="menuitem" tabindex="-1" href="http://localhost:3000/#!/products" data-ng-bind="subitem.title" class="ng-binding">Líneas de productos</a>
+                    </li><!-- end ngIf: subitem.shouldRender(authentication.user); --><!-- end ngRepeat: subitem in item.items | orderBy: 'position' --><!-- ngIf: subitem.shouldRender(authentication.user); --><li role="presentation" data-ng-repeat="subitem in item.items | orderBy: &#39;position&#39;" data-ng-if="subitem.shouldRender(authentication.user);" ui-route="/goals" ng-class="{active: $uiRoute}" class="ng-scope">
+                        <a role="menuitem" tabindex="-1" href="http://localhost:3000/#!/goals" data-ng-bind="subitem.title" class="ng-binding">Objetivos</a>
+                    </li><!-- end ngIf: subitem.shouldRender(authentication.user); --><!-- end ngRepeat: subitem in item.items | orderBy: 'position' --><!-- ngIf: subitem.shouldRender(authentication.user); --><li role="presentation" data-ng-repeat="subitem in item.items | orderBy: &#39;position&#39;" data-ng-if="subitem.shouldRender(authentication.user);" ui-route="/media" ng-class="{active: $uiRoute}" class="ng-scope">
+                        <a role="menuitem" tabindex="-1" href="http://localhost:3000/#!/media" data-ng-bind="subitem.title" class="ng-binding">Medios</a>
+                    </li><!-- end ngIf: subitem.shouldRender(authentication.user); --><!-- end ngRepeat: subitem in item.items | orderBy: 'position' --><!-- ngIf: subitem.shouldRender(authentication.user); --><li role="presentation" data-ng-repeat="subitem in item.items | orderBy: &#39;position&#39;" data-ng-if="subitem.shouldRender(authentication.user);" ui-route="/medium-categories" ng-class="{active: $uiRoute}" class="ng-scope">
+                        <a role="menuitem" tabindex="-1" href="http://localhost:3000/#!/medium-categories" data-ng-bind="subitem.title" class="ng-binding">Categorías de medios</a>
+                    </li><!-- end ngIf: subitem.shouldRender(authentication.user); --><!-- end ngRepeat: subitem in item.items | orderBy: 'position' --><!-- ngIf: subitem.shouldRender(authentication.user); --><li role="presentation" data-ng-repeat="subitem in item.items | orderBy: &#39;position&#39;" data-ng-if="subitem.shouldRender(authentication.user);" ui-route="/restrictions" ng-class="{active: $uiRoute}" class="ng-scope">
+                        <a role="menuitem" tabindex="-1" href="http://localhost:3000/#!/restrictions" data-ng-bind="subitem.title" class="ng-binding">Restricciones</a>
+                    </li><!-- end ngIf: subitem.shouldRender(authentication.user); --><!-- end ngRepeat: subitem in item.items | orderBy: 'position' --><!-- ngIf: subitem.shouldRender(authentication.user); --><li role="presentation" data-ng-repeat="subitem in item.items | orderBy: &#39;position&#39;" data-ng-if="subitem.shouldRender(authentication.user);" ui-route="/admin/users" ng-class="{active: $uiRoute}" class="ng-scope">
+                        <a role="menuitem" tabindex="-1" href="http://localhost:3000/#!/admin/users" data-ng-bind="subitem.title" class="ng-binding">Usuarios</a>
+                    </li><!-- end ngIf: subitem.shouldRender(authentication.user); --><!-- end ngRepeat: subitem in item.items | orderBy: 'position' -->
+                </ul>
+            </li><!-- end ngRepeat: item in menu.items | orderBy: 'position' -->
+            <li data-ng-hide="authentication.user" ng-class="{active: $uiRoute}" ui-route="/" class="ng-scope ng-hide">
+                <a href="http://localhost:3000/#!/signin"><i class="fa fa-user"></i> <span class="nav-label">Ingresa</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</div>
+
+	    <!-- Page wraper -->
+	    <div id="page-wrapper" ng-class="{&#39;notadmin&#39; : isNotAdmin}" class="gray-bg notadmin" style="min-height: 768px;">
+
+	        <!-- Page wrapper -->
+	        <!-- ngInclude: '/modules/core/views/header.client.view.html' --><div ng-include="&#39;/modules/core/views/header.client.view.html&#39;" class="ng-scope"><div class="row border-bottom ng-scope" data-ng-controller="HeaderController">
+    <nav class="navbar navbar-static-top white-bg" role="navigation">
+        <div class="navbar-header">
+            <a href="http://localhost:3000/#!/">
+                <img src="./NoiseGrasp - Development Environment_files/logoNoisegraspBig.old2.png" class="logo-img">
+                
+            </a>
+            <!--span minimaliza-sidebar></span>
+            <form role="search" class="navbar-form-custom" method="post" action="">
+                <div class="form-group">
+                    <input type="text" placeholder="Busca en tus campañas..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form-->
+        </div>
+        <ul class="nav navbar-top-links navbar-right ng-hide" data-ng-hide="authentication.user">
+            <li ui-route="/signup" class="ng-scope">
+                <a href="http://localhost:3000/#!/signup">Registrate</a>
+            </li>
+            <li class="divider-vertical"></li>
+            <li ui-route="/signin" class="ng-scope">
+                <a href="http://localhost:3000/#!/signin">Ingresa</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-top-links navbar-right" data-ng-show="authentication.user">
+            <li class="dropdown">
+
+                <a href="http://localhost:3000/#" class="dropdown-toggle user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="noisegrasp-user icon"></i>
+                    <span data-ng-bind="authentication.user.displayName" class="name ng-binding">Test test</span> <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="http://localhost:3000/#!/settings/profile">Perfil</a>
+                    </li>
+                    <li data-ng-show="authentication.user.provider === &#39;local&#39;" class="">
+                        <a href="http://localhost:3000/#!/settings/password">Cambiar contraseña</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="http://localhost:3000/auth/signout">Salir</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+</div>
+
+	        <!-- Main view  -->
+	        
+	<!-- uiView:  --><div data-ui-view="" class="ng-scope"><div data-ng-controller="CampaignsController" data-ng-init="find()" class="ng-scope">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="row-same-height max-width">
+            <div class="col-sm-6 col-xs-height col-middle">
+                <h2>Campañas</h2>
+            </div>
+            <div class="col-sm-6 col-xs-height col-bottom">
+                <a class="pull-right btn btn-primary" href="http://localhost:3000/#!/campaigns/create">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nueva campaña
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper wrapper-content" id="campaignsList">
+        <div class="row animated fadeInRight">
+            <div class="">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-header row-same-height">
+                        <div class="ibox-header-wrapper">
+                            <div class="col-md-2 col-xs-12 order">
+                                <i class="fa fa-fw fa-sort-alpha-asc ng-scope" tooltip-placement="top" tooltip="Ordenar por Nombre"></i>
+                                <input type="checkbox" data-ng-model="selectionfilter" class="js-switch ng-isolate-scope ng-pristine ng-valid" ui-switch="" checked="" ng-click="sorting()" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); transition: border 0.4s, box-shadow 0.4s; -webkit-transition: border 0.4s, box-shadow 0.4s; background-color: rgb(255, 255, 255);"><small style="left: 0px; transition: left 0.2s; -webkit-transition: left 0.2s; background-color: rgb(255, 255, 255);"></small></span>
+                                <i class="fa fa-fw fa-calendar ng-scope" tooltip-placement="top" tooltip="Ordenar por Fecha de Creacion"></i>
+                            </div>
+                            <div class="col-md-5 col-md-offset-5 col-xs-12 filter form-group has-feedback">
+                                <input type="text" ng-model="search" placeholder="Buscar..." class="form-control input-lg ng-pristine ng-valid">
+                                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ibox-content" id="ibox-content">
+                        <div id="vertical-timeline" class="vertical-container dark-timeline">
+                            <!-- ngRepeat: campaign in campaigns | filter:search | orderBy:sort --><div class="vertical-timeline-block col-lg-12 campaign ng-scope" data-ng-show="campaigns.length" data-ng-repeat="campaign in campaigns | filter:search | orderBy:sort">
+                                <!-- ngInclude: undefined --><ng-include src="singleCampaignView" class="ng-scope"><div class="vertical-timeline-icon navy-bg ng-scope" tooltip-placement="right" tooltip="Fecha de Creación">
+    <span class="day ng-binding" data-ng-bind="campaign.beginning | date:&#39;dd&#39;">15</span>
+    <span class="month ng-binding" data-ng-bind="campaign.beginning | date:&#39;MMM&#39;">ABR</span>
+</div>
+<div class="vertical-timeline-content ng-scope">
+    <div class="col-xs-12 header">
+        <h1 class="title ng-binding">
+            copy and build
+             <small> 
+             <a data-ng-href="/#!/campaigns/5526d71019a5795f06ac1727/edit" class="edit ng-scope" tooltip-placement="right" tooltip="Editar campaña" href="http://localhost:3000/#!/campaigns/5526d71019a5795f06ac1727/edit">
+
+                <span class="glyphicon glyphicon-wrench"></span>
+            </a>
+            </small>
+        </h1>
+    </div>
+    <div class="col-xs-12 right-side">
+        <div data-ng-show="campaign.scenarios" class="">
+            <div>
+                <div class="col-xs-12 form-group campaign-select">
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 form-group-lg scenario-select">
+                        <h2 class="alabel">Escenario:</h2>
+                    </div>
+                    <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 form-group-lg scenario-select">
+                        <!--select ng-change="updateSelectedScenarioForCampaign(campaign, selectedScenario)" ng-model="campaign.scenario" class="form-control">
+                            <option ng-repeat="selectedScenario in campaign.scenarios" value="selectedScenario">{{selectedScenario.name}}
+                            </option>
+                        </select-->
+                        <div class="input-group">
+                            <div class="ui-select-container ui-select-bootstrap dropdown ng-pristine ng-valid" ng-class="{open: $select.open}" ng-model="campaign.scenario" theme="bootstrap" ng-disabled="disabled"><div class="ui-select-match" ng-hide="$select.open" ng-disabled="$select.disabled" ng-class="{&#39;btn-default-focus&#39;:$select.focus}" placeholder="Selecciona un escenario"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide">Selecciona un escenario</span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{&#39;ui-select-allow-clear&#39;: $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude=""><span class="ng-binding ng-scope">escenario2</span></span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty()" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><input type="text" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-0" aria-activedescendant="ui-select-choices-row-0-0" class="form-control ui-select-search ng-pristine ng-valid ng-hide" placeholder="Selecciona un escenario" ng-model="$select.search" ng-show="$select.searchEnabled &amp;&amp; $select.open"><ul class="ui-select-choices ui-select-choices-content dropdown-menu ng-scope" role="listbox" ng-show="$select.items.length &gt; 0" repeat="selectedScenario in campaign.scenarios | filter: {name: $select.search
+}"><li class="ui-select-choices-group" id="ui-select-choices-0"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index &gt; 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: selectedScenario in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: selectedScenario in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: selectedScenario in $select.items --></li></ul><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="focusser-0" aria-label="Select box focus" aria-haspopup="true" role="button"></div>
+                            <span class="input-group-btn toggler">
+                            
+                                <a type="button" class="addonbtn ng-scope" data-ng-href="#!/campaigns/5526d71019a5795f06ac1727/scenarios/create" tooltip-placement="right" tooltip="Crear escenario" href="http://localhost:3000/#!/campaigns/5526d71019a5795f06ac1727/scenarios/create">
+                                    <i class="fa fa-fw fa-file-o"></i>
+                                </a>
+                            <!--button type="button" data-ng-show="campaign.scenario" data-ng-click="makeItFavourite(campaign)" class="favouriteToggle" ng-class="{favourite : campaign.scenario.isFavourite}" tooltip-placement="right" tooltip="Favorito">
+                                    <i class="fa fa-fw fa-check"></i>
+                                </button-->
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-xs-push-1 col-sm-1 col-sm-push-1 col-md-1 col-lg-1 hidden">
+                        <div dropdown="" on-toggle="toggled(open)" class="">
+                            <a type="button" class="btn btn-success btn-lg" dropdown-toggle="" ng-disabled="disabled" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a data-ng-href="#!/campaigns/5526d71019a5795f06ac1727/scenarios/create" href="http://localhost:3000/#!/campaigns/5526d71019a5795f06ac1727/scenarios/create">Crear nuevo escenario</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--a data-ng-show="campaign.scenario" data-ng-click="makeItFavourite(campaign)" class="favouriteToggle" ng-class="{favourite : campaign.scenario.isFavourite}" tooltip-placement="right" tooltip="Favorito">
+                        <i class="fa fa-fw fa-check"></i>
+                    </a-->
+                    <a data-ng-href="#!/campaigns/5526d71019a5795f06ac1727/scenarios/552fe950697ceba90527c2ec" class="btn btn-success viewscenario ng-scope" tooltip-placement="right" tooltip="Resultados de la simulación" href="http://localhost:3000/#!/campaigns/5526d71019a5795f06ac1727/scenarios/552fe950697ceba90527c2ec">
+                        <i class="fa fa-fw fa-pie-chart"></i>
+                    </a>
+                </div>
+                <div class="col-xs-12 campaigns-buttons">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-ng-show="campaign.scenario">
+                        <div class="col-xs-12 col-lg-4 col-md-6 panel-wrapper ">
+                            <div class="widget style1 panel navy-bg">
+                                <h6 class="text-center button-title">Inversion de Medios</h6>
+                                <h2 class="text-center font-bold button-info ng-binding">MM$81.7</h2>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 col-md-6 panel-wrapper">
+                            <div class="widget style1 panel lazur-bg">
+                                <h6 class="text-center button-title">Ventas esperadas</h6>
+                                <h2 class="text-center font-bold button-info ng-binding">MM$89</h2>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 col-md-6 panel-wrapper">
+                            <div class="widget style1 panel yellow-bg">
+                                <h6 class="text-center button-title">Roi Esperado</h6>
+                                <h2 class="text-center font-bold button-info ng-binding">29.4%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--div class="col-md-1 col-lg-1 visible-md visible-lg">
+                                                        <div class="widget style1 panel transparent">
+                                                            <a data-ng-href="#!/campaigns/{{campaign._id}}/scenarios/{{campaign.scenario._id}}" data-ng-show="campaign.scenario" class="sidebutton btn btn-primary btn-lg" href="/#!/campaigns"> <i class="fa fa-angle-right fa-fw"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div-->
+                </div>
+            </div>
+        </div>
+        <div class="loading text-center col-xs-12">
+            <div data-ng-hide="campaign.scenariosCount == 0 || campaign.scenarios" class="ng-hide">
+                <i class="fa fa-spinner fa-spin"></i>
+                <h2 class=""> Cargando Escenarios</h2>
+            </div>
+        </div>
+        <div class="loadResponse text-center col-xs-12 ng-hide" data-ng-show="campaign.scenariosCount == 0">
+            <h3> Lo sentimos </h3>
+            <p> Aun no hay escenarios para esta campaña</p>
+            <a class="btn btn-success" data-ng-href="#!/campaigns/5526d71019a5795f06ac1727/scenarios/create" href="http://localhost:3000/#!/campaigns/5526d71019a5795f06ac1727/scenarios/create">
+                                                    Crear escenario 
+                                                    <i class="fa fa-fw fa-plus"></i> 
+                                            </a>
+        </div>
+    </div>
+</div>
+</ng-include>
+                            </div><!-- end ngRepeat: campaign in campaigns | filter:search | orderBy:sort -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+	        <!-- Footer -->
+	        <!-- ngInclude: '/modules/core/views/footer.client.view.html' --><div ng-include="&#39;/modules/core/views/footer.client.view.html&#39;" class="ng-scope"><div class="footer ng-scope">
+    <img src="./NoiseGrasp - Development Environment_files/logotipo+isotipo_B&N.png" style="height: 35px"> 
+</div>
+</div>
+
+    	</div>
+    </nav>
+    <!-- End page wrapper-->
+
+</div>
+<!-- End wrapper-->
+
+	<!--Embedding The User Object-->
+	<script type="text/javascript">
+		var user = {"_id":"54cbb5f3ed2666d221a5e7a5","displayName":"test test","provider":"local","username":"test","enabled":true,"__v":0,"updated":"2015-03-20T20:48:03.684Z","created":"2015-01-30T16:48:51.515Z","roles":["user"],"email":"test@test.test","lastName":"test","firstName":"test"};
+	</script>
+
+	<!--Application JavaScript Files-->
+	<script type="text/javascript" src="./NoiseGrasp - Development Environment_files/jquery.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/bootstrap.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/metisMenu.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/pace.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/lodash.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/moment.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/scripts.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular-locale_es-cl_fixed.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular-resource.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular-chart.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular-cookies.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular-animate.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular-touch.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular-sanitize.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/angular-ui-router.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/ui-utils.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/select.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/ui-bootstrap-tpls.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/d3.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/icheck.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/nv.d3.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/switchery.min.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/ng-switchery.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(1).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(2).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(3).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(4).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(5).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(6).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(7).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(8).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(9).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(10).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/Chart(11).js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/application.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/admin.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/assumptions.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/campaigns.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/core.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/goals.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/media.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/medium-categories.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/products.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/restrictions.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/scenarios.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/segments.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/useradmins.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/users.client.module.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/admin.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/admin.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/admin.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/assumptions.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/assumptions.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/assumptions.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/assumptions.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/campaigns.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/campaigns.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/campaigns.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/campaigns.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/core.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/header.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/home.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/core.client.directives.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/menus.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/goals.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/goals.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/goals.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/goals.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/media.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/media.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/media.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/media.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/medium-categories.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/medium-categories.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/medium-categories.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/medium-categories.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/products.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/products.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/products.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/products.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/restrictions.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/restrictions.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/restrictions.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/restrictions.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/scenarios.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/scenarios.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/scenarios.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/scenarios.plan.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/scenarios.client.directives.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/scenarios.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/segments.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/segments.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/segments.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/segments.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/useradmins.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/useradmins.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/useradmins.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/users.client.config.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/users.client.routes.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/authentication.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/password.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/settings.client.controller.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/authentication.client.service.js"></script><script type="text/javascript" src="./NoiseGrasp - Development Environment_files/users.client.service.js"></script> 
+
+	
+	<!--Livereload script rendered -->
+	<script type="text/javascript" src="./NoiseGrasp - Development Environment_files/livereload.js"></script>
+	
+
+
+<span id="buffer-extension-hover-button" style="display: none;position: absolute;z-index: 8675309;width: 100px;height: 25px;background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@2x.png);background-size: 100px 25px;opacity: 0.9;cursor: pointer;"></span></body></html>

@@ -18,7 +18,8 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [{
+  "acls": [
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
@@ -29,7 +30,8 @@
       "principalType": "ROLE",
       "principalId": "ADMIN",
       "permission": "ALLOW",
-      "property" : "find"
-    }],
+      "property": "find"
+    }
+  ],
   "methods": []
 }

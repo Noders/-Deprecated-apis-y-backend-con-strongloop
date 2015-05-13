@@ -1,0 +1,180 @@
+////////////////////////////////////////
+mysql.server restart
+
+////////////////////////////////////////
+
+FIELDS
+incluir o excluir
+{"fields": {"lastName": false}}
+{"fields": {"actorId": true, "firstName":true}}
+
+
+
+INCLUDE
+{"include": "perros"}
+
+
+LIMIT
+{"limit": 2}
+
+
+ORDER
+{ "order": "lastName ASC"}
+{ "order": "lastName DESC"}
+{ "order": ["lastName ASC","firstName ASC"]}
+
+
+SKIP
+{"skip": 2}
+{"limit": 3,"skip":2}
+
+
+
+
+
+
+WHERE
+{"where":
+    {
+        "lastName" : "CHASE"
+    }
+}
+
+
+/: GT Y LT  (GTE, LTE) :/
+
+
+{"where":
+    {
+        "lastUpdate" : 
+        {
+            "gt": "2006-03-15T04:34:33.000Z"
+        }
+    }
+}
+
+
+{"where":
+    {
+        "lastUpdate" : 
+        {
+            "lt": "2006-03-15T04:34:33.000Z"
+        }
+    }
+}
+
+
+
+
+
+AND / OR
+{"where":
+    {
+        "and":
+        [
+            {
+                "firstName" : "PENELOPE"
+            },
+            {
+                "lastName" : "GUINESS"
+            }
+        ]
+    }
+}
+
+{"where":
+    {
+        "or":
+        [
+            {
+                "firstName" : "PENELOPE"
+            },
+            {
+                "lastName" : "GUINESS"
+            }
+        ]
+    }
+}
+
+
+
+{"where":
+    {
+        "or":
+        [
+            {
+                "and":
+                [
+                    {"firstName" : "PENELOPE"},
+                    {"lastName" : "GUINESS"}
+                ]
+            },
+            { "firstName" : "ED"}
+        ]
+    }
+}
+
+
+{"where":
+    {
+        "or":
+        [
+            {
+                "and":
+                [
+                    {"firstName" : "PENELOPE"},
+                    {"lastName" : "GUINESS"}
+                ]
+            },
+            {
+                "and":
+                [
+                    {"lastName":"CHASE"},
+                    { "firstName" : "ED"}
+                ]
+            }
+        ]
+    }
+}
+
+
+//BETWEEM (Y BETWEEN EN MODELOS ASOXIADOS)
+{
+    "where": 
+    {
+        "edad": 
+        {   
+            "between": [0,1]
+        }
+    }
+}
+
+//INQ
+
+
+{
+    "where": 
+    {
+        "edad": 
+        {   
+            "inq": [1,2]
+        }
+    }
+}
+
+
+
+
+////////////////////////////////////////
+
+yo angular-fullstack:route myroute
+
+////////////////////////////////////////
+
+lb-ng server/server.js lb-services.js -u http://localhost:3000/api
+
+////////////////////////////////////////
+
+lb-ng-doc 
+
+////////////////////////////////////////

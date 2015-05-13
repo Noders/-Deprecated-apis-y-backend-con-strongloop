@@ -1,0 +1,40 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "noders_dev": {
+    "database": "noders_strongloop",
+    "name": "noders_dev",
+    "connector": "mongodb"
+  },
+  "mysql": {
+    "database": "sakila",
+    "name": "mysql",
+    "connector": "mysql",
+    "user": "root"
+  },
+  "gmail": {
+    "name": "gmail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": false,
+        "port": 587,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "noderstest@gmail.com",
+          "pass": "noders_test"
+        }
+      }
+    ]
+  },
+  "noders_gmail": {
+    "name": "noders_gmail",
+    "connector": "mail"
+  }
+}

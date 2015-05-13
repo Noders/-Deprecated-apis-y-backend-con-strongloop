@@ -11,16 +11,19 @@
       "foreignKey": ""
     }
   },
-  "acls": [{
+  "acls": [
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
-      "permission": "DENY"
-    },{
+      "permission": "ALLOW"
+    },
+    {
       "accessType": "READ",
       "principalType": "ROLE",
       "principalId": "ADMIN",
       "permission": "ALLOW"
-    }],
+    }
+  ],
   "methods": []
 }

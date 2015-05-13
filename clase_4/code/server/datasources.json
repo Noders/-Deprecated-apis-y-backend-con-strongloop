@@ -5,6 +5,7 @@
   },
   "noders_dev": {
     "name": "noders_dev",
+    "database": "noders_strongloop",
     "connector": "mongodb"
   },
   "mysql": {
@@ -31,5 +32,9 @@
         }
       }
     ]
+  },
+  "noders_gmail": {
+    "name": "noders_gmail",
+    "connector": "mail"
   }
 }
