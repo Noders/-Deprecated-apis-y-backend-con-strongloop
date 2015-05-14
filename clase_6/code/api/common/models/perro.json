@@ -17,6 +17,9 @@
     },
     "ladrido": {
       "type": "string"
+    },
+    "propiedadtest": {
+      "type": "boolean"
     }
   },
   "validations": [],
